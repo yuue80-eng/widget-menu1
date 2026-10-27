@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Menu – Life Planner</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+  :root{--bg1:#4a0e18;--bg2:#2c070d;--cream:#f0e5d3;--soft:#c9b49c;--line:#7a2a35;--gold:#d9bf9a}
+  *{box-sizing:border-box;margin:0;padding:0}
+  [hidden]{display:none!important}
+  html,body{background:#2c070d;font-family:'Cormorant Garamond',Georgia,serif;color:var(--cream)}
+  .menu{min-height:100vh;padding:clamp(8px,4vw,14px) clamp(5px,3.5vw,10px) 14px;background:linear-gradient(180deg,var(--bg1),var(--bg2));
+        border:1px solid var(--line);border-radius:12px;display:flex;flex-direction:column;gap:4px}
+  .logo{text-align:center;margin:2px 0 6px}
+  .logo b{font-weight:500;font-size:clamp(22px,16vw,40px);letter-spacing:-.18em;color:var(--gold);line-height:1}
+  .logo i{font-style:normal;color:var(--gold);font-size:14px;margin-left:.6em;vertical-align:top}
+  a.home{display:flex;align-items:center;gap:clamp(4px,3vw,8px);padding:5px clamp(4px,3vw,8px);border-radius:7px;background:#7a1f2c;color:var(--cream);text-decoration:none;font-weight:600;font-size:clamp(12px,9vw,15px)}
+  .ic{width:clamp(12px,9vw,18px);height:clamp(12px,9vw,18px);flex:none;fill:none;stroke:var(--gold);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+  .chev{width:clamp(10px,7vw,16px);height:clamp(10px,7vw,16px);flex:none;fill:none;stroke:var(--soft);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;margin-left:auto;transition:transform .2s}
+  .head{width:100%;display:flex;align-items:center;gap:clamp(4px,3vw,8px);background:none;border:0;color:var(--cream);cursor:pointer;
+        font:600 clamp(12px,8.5vw,15px) 'Cormorant Garamond',serif;text-align:left;padding:5px 2px;border-radius:7px}
+  .head:hover{background:#ffffff10}
+  .head span{min-width:0;line-height:1.1}
+  .sec.closed .chev{transform:rotate(-90deg)}
+  .sec.closed ul{display:none}
+  ul{list-style:none;margin:0 0 3px clamp(4px,4vw,12px);padding-left:clamp(4px,3.5vw,10px);border-left:1px solid var(--line)}
+  li a{display:block;padding:2px clamp(2px,2.5vw,6px);color:var(--soft);text-decoration:none;font-size:clamp(11px,7.5vw,14px);line-height:1.2;border-radius:5px}
+  li a:hover{color:var(--cream);background:#ffffff12}
+  li a:focus-visible,.head:focus-visible,a.home:focus-visible{outline:2px solid var(--gold);outline-offset:1px}
+  html,body{height:100%}
+  .part{min-height:100vh;box-sizing:border-box;margin:0}
+  .part .head{cursor:default}.part .head:hover{background:none}.part .chev{display:none}
+  .part.p1{border-radius:12px 12px 0 0;border-bottom:0}
+  .part.p2,.part.p3{border-radius:0;border-top:0;border-bottom:0}
+  .part.p4{border-radius:0 0 12px 12px;border-top:0}
+  .part.p1,.part.p2,.part.p3,.part.p4{padding-top:8px;padding-bottom:8px}
+  .part.p2,.part.p3,.part.p4{padding-top:4px}
+  .foot{margin-top:auto;padding-top:14px;text-align:center;font-family:'Great Vibes','Brush Script MT',cursive;font-size:clamp(15px,11vw,26px);color:var(--soft)}
+</style>
+</head>
+<body>
+<nav class="menu" aria-label="Menu Life Planner">
+  <div class="logo"><b>AF</b><i>✦</i></div>
+  <a class="home" href="https://www.notion.so/40683c5919ff81f5bdc1ec21bb138d4c" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" class="ic"><path d="M4 11l8-6.500 8 6.500v8h-5.500v-5h-5v5H4z"/></svg>Accueil</a>
+<section class="sec" data-k="0">
+  <button class="head" type="button" aria-expanded="true"><svg viewBox="0 0 24 24" class="ic"><path d="M4 5.5c3-1 5-.8 8 .8 3-1.6 5-1.8 8-.8v12.5c-3-1-5-.8-8 .8-3-1.6-5-1.8-8-.8z"/><path d="M12 6.3V19"/></svg><span>Mes cours</span><svg viewBox="0 0 24 24" class="chev"><path d="M7 10l5 5 5-5"/></svg></button>
+  <ul><li><a href="https://www.notion.so/3d7297c9d24b47a9804eead545e4827f" target="_blank" rel="noopener">L1 Physique-Chimie</a></li><li><a href="https://www.notion.so/3d7297c9d24b47a9804eead545e4827f" target="_blank" rel="noopener">L2 Physique-Chimie</a></li><li><a href="https://www.notion.so/3d7297c9d24b47a9804eead545e4827f" target="_blank" rel="noopener">L3 Physique-Chimie</a></li><li><a href="https://www.notion.so/3d7297c9d24b47a9804eead545e4827f" target="_blank" rel="noopener">L1 Chimie</a></li><li><a href="https://www.notion.so/3d7297c9d24b47a9804eead545e4827f" target="_blank" rel="noopener">L2 Chimie</a></li><li><a href="https://www.notion.so/3d7297c9d24b47a9804eead545e4827f" target="_blank" rel="noopener">L3 Chimie</a></li><li><a href="https://www.notion.so/3d7297c9d24b47a9804eead545e4827f" target="_blank" rel="noopener">Prise de notes</a></li><li><a href="https://www.notion.so/3d7297c9d24b47a9804eead545e4827f" target="_blank" rel="noopener">Devoirs à rendre</a></li><li><a href="https://www.notion.so/3d7297c9d24b47a9804eead545e4827f" target="_blank" rel="noopener">Fiches révisions</a></li><li><a href="https://www.notion.so/3d7297c9d24b47a9804eead545e4827f" target="_blank" rel="noopener">Langues</a></li></ul>
+</section>
+<section class="sec" data-k="1">
+  <button class="head" type="button" aria-expanded="true"><svg viewBox="0 0 24 24" class="ic"><path d="M12 19.5C5 14.5 3.5 11 3.5 8.6A4.1 4.1 0 0 1 12 7a4.1 4.1 0 0 1 8.5 1.6c0 2.4-1.500 5.900-8.500 10.900z"/></svg><span>Je prends soin de moi</span><svg viewBox="0 0 24 24" class="chev"><path d="M7 10l5 5 5-5"/></svg></button>
+  <ul><li><a href="https://www.notion.so/83d1d7150fa9434cbfd446083f0bf7df" target="_blank" rel="noopener">Habit tracking</a></li><li><a href="https://www.notion.so/19083c5919ff819fa612c84fd79e7908" target="_blank" rel="noopener">Mes recettes</a></li><li><a href="https://www.notion.so/19083c5919ff8127a427cccdb94395ce" target="_blank" rel="noopener">Pilates</a></li><li><a href="https://www.notion.so/19083c5919ff81dbaa98dcaa683007e3" target="_blank" rel="noopener">Fitness</a></li><li><a href="https://www.notion.so/19083c5919ff81fd8fb1ebdf4401796e" target="_blank" rel="noopener">Yoga</a></li><li><a href="https://www.notion.so/18a83c5919ff80e6a727cfe329953cee" target="_blank" rel="noopener">Skin and body</a></li><li><a href="https://www.notion.so/18a83c5919ff80f4a47dfa63ce4e5dd7" target="_blank" rel="noopener">Hair</a></li><li><a href="https://www.notion.so/18a83c5919ff80438588c518a5fdccfb" target="_blank" rel="noopener">Dressing</a></li><li><a href="https://www.notion.so/19083c5919ff815d9cfbfed47fef9dd3" target="_blank" rel="noopener">Movie / Series</a></li><li><a href="https://www.notion.so/19083c5919ff81658ac4cbbe02fe8092" target="_blank" rel="noopener">My reading</a></li><li><a href="https://www.notion.so/19083c5919ff81ceadf4f88b774f40a5" target="_blank" rel="noopener">Leisure</a></li><li><a href="https://www.notion.so/19083c5919ff8119b390e31fae0378c4" target="_blank" rel="noopener">Pets</a></li><li><a href="https://www.notion.so/19083c5919ff8179b969f7af9a58b15e" target="_blank" rel="noopener">Plants / gardens</a></li><li><a href="https://www.notion.so/18a83c5919ff8036b144c03c4eef1594" target="_blank" rel="noopener">Homes</a></li><li><a href="https://www.notion.so/19083c5919ff815bbaa8da4f19ad68d5" target="_blank" rel="noopener">Travel</a></li></ul>
+</section>
+<section class="sec" data-k="2">
+  <button class="head" type="button" aria-expanded="true"><svg viewBox="0 0 24 24" class="ic"><path d="M16.500 4.500A8 8 0 1 0 19.500 15 6.500 6.500 0 0 1 16.500 4.500z"/></svg><span>Prière</span><svg viewBox="0 0 24 24" class="chev"><path d="M7 10l5 5 5-5"/></svg></button>
+  <ul><li><a href="https://www.notion.so/19083c5919ff81ceb777f91b884a3784" target="_blank" rel="noopener">Habit tracking</a></li><li><a href="https://www.notion.so/19083c5919ff81e9997ddc73d03ee639" target="_blank" rel="noopener">Prière</a></li><li><a href="https://www.notion.so/19083c5919ff811585fde6c3ffe99b89" target="_blank" rel="noopener">Spiritualité</a></li></ul>
+</section>
+<section class="sec" data-k="3">
+  <button class="head" type="button" aria-expanded="true"><svg viewBox="0 0 24 24" class="ic"><path d="M12 19.5C5 14.5 3.5 11 3.5 8.6A4.1 4.1 0 0 1 12 7a4.1 4.1 0 0 1 8.5 1.6c0 2.4-1.500 5.900-8.500 10.900z"/></svg><span>Mental</span><svg viewBox="0 0 24 24" class="chev"><path d="M7 10l5 5 5-5"/></svg></button>
+  <ul><li><a href="https://www.notion.so/19083c5919ff8162a58cc1a262004093" target="_blank" rel="noopener">Habit tracking</a></li><li><a href="https://www.notion.so/19083c5919ff816fb5c7e71014c328e1" target="_blank" rel="noopener">Mental health</a></li><li><a href="https://www.notion.so/19083c5919ff81d9a766e94a17e5116f" target="_blank" rel="noopener">Journal de gratitude</a></li><li><a href="https://www.notion.so/18a83c5919ff80bdaa2befe51dd73c0a" target="_blank" rel="noopener">Anxiété</a></li><li><a href="https://www.notion.so/19083c5919ff81e38a6fe1c6070cf52a" target="_blank" rel="noopener">Trauma recovery</a></li><li><a href="https://www.notion.so/19083c5919ff81cd8797ce04cb63f53a" target="_blank" rel="noopener">Hypnotherapy</a></li><li><a href="https://www.notion.so/19083c5919ff8150b89fce840283b712" target="_blank" rel="noopener">Self therapy</a></li><li><a href="https://www.notion.so/19083c5919ff81459e61e3a2240536e4" target="_blank" rel="noopener">Menstruation follow up</a></li><li><a href="https://www.notion.so/19083c5919ff8154b3fbcb5170413b16" target="_blank" rel="noopener">Medical follow up</a></li><li><a href="https://www.notion.so/19083c5919ff81958da4ea05568e0fc1" target="_blank" rel="noopener">Calendrier de l’avent bien être</a></li></ul>
+</section>
+<section class="sec" data-k="4">
+  <button class="head" type="button" aria-expanded="true"><svg viewBox="0 0 24 24" class="ic"><rect x="4" y="8" width="16" height="11" rx="1.500"/><path d="M9 8V6h6v2M4 13h16"/></svg><span>Company & Finance</span><svg viewBox="0 0 24 24" class="chev"><path d="M7 10l5 5 5-5"/></svg></button>
+  <ul><li><a href="https://www.notion.so/d5a6e24514794965af52d243292bd1e1" target="_blank" rel="noopener">Personal finance</a></li><li><a href="https://www.notion.so/53e35700906d4fd18f0fb9085f1aaa34" target="_blank" rel="noopener">MyCuddle</a></li><li><a href="https://www.notion.so/27b83c5919ff806a8ebdd27fd8a37a00" target="_blank" rel="noopener">SéléctiaConfort</a></li><li><a href="https://www.notion.so/18a83c5919ff80b98ef7f4152f960e57" target="_blank" rel="noopener">Ressence</a></li><li><a href="https://www.notion.so/25eacc4c0fd343daa511ad299c2da9c2" target="_blank" rel="noopener">Sérénité et Encre et Silence</a></li><li><a href="https://www.notion.so/18a83c5919ff80ef8483d81dd75376f6" target="_blank" rel="noopener">Inventor List company</a></li><li><a href="https://www.notion.so/19083c5919ff80f3bd74f8de3f9e80db" target="_blank" rel="noopener">Recherche d’emploi, stage</a></li><li><a href="https://www.notion.so/19083c5919ff8007bd9fd5517b6f0f41" target="_blank" rel="noopener">Travail salarié</a></li></ul>
+</section>
+<section class="sec" data-k="5">
+  <button class="head" type="button" aria-expanded="true"><svg viewBox="0 0 24 24" class="ic"><circle cx="9" cy="14" r="4.500"/><circle cx="15" cy="14" r="4.500"/><path d="M12 5l-1.500 2h3z"/></svg><span>Relationship</span><svg viewBox="0 0 24 24" class="chev"><path d="M7 10l5 5 5-5"/></svg></button>
+  <ul><li><a href="https://www.notion.so/18a83c5919ff80c5a20de1cc097db363" target="_blank" rel="noopener">Budget Noël</a></li><li><a href="https://www.notion.so/19083c5919ff81e091a1f14b8faaa973" target="_blank" rel="noopener">Trousse de survie des Fêtes</a></li><li><a href="https://www.notion.so/19083c5919ff815989c6fc3c5aecc457" target="_blank" rel="noopener">Relationship</a></li><li><a href="https://www.notion.so/19083c5919ff818eae00ca2d1e6dc6f2" target="_blank" rel="noopener">Wedding planning</a></li><li><a href="https://www.notion.so/19083c5919ff81f4b915f9461f1c3171" target="_blank" rel="noopener">Mom’s organization</a></li></ul>
+</section>
+  <div class="foot">La vie est belle ♡</div>
+</nav>
+<script>
+(function(){
+  var P=(new URLSearchParams(location.search)).get('p');
+  var map={'1':{logo:1,home:1,secs:[0]},'2':{secs:[1]},'3':{secs:[2,3]},'4':{secs:[4,5],foot:1}};
+  if(map[P]){
+    var m=map[P], menu=document.querySelector('.menu');
+    menu.classList.add('part','p'+P);
+    if(!m.logo) document.querySelector('.logo').hidden=true;
+    if(!m.home) document.querySelector('a.home').hidden=true;
+    if(!m.foot) document.querySelector('.foot').hidden=true;
+    document.querySelectorAll('.sec').forEach(function(s){
+      if(m.secs.indexOf(+s.getAttribute('data-k'))<0) s.hidden=true;
+    });
+    return;   /* pas de repli en mode parties */
+  }
+})();
+(function(){
+  if((new URLSearchParams(location.search)).get('p')) return;
+  var KEY='lp-menu-ferme';
+  function get(){try{return JSON.parse(localStorage.getItem(KEY)||'[]')}catch(e){return []}}
+  function set(a){try{localStorage.setItem(KEY,JSON.stringify(a))}catch(e){}}
+  var closed=get();
+  document.querySelectorAll('.sec').forEach(function(s){
+    var k=s.getAttribute('data-k'), b=s.querySelector('.head');
+    if(closed.indexOf(k)>-1){s.classList.add('closed');b.setAttribute('aria-expanded','false')}
+    b.addEventListener('click',function(){
+      var c=s.classList.toggle('closed'); b.setAttribute('aria-expanded',String(!c));
+      var a=get().filter(function(x){return x!==k}); if(c)a.push(k); set(a);
+    });
+  });
+})();
+</script>
+</body>
+</html>
